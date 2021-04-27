@@ -9,7 +9,9 @@ for (let i=0;i< like.length;i++){
   like[0].addEventListener('click', function(e) {
     mimicServerCall()
     .then(()=>{})
-    .catch(()=>{})
+    .catch(()=>{
+      error.classList.remove('hidden');
+    })
   })
 }
 
