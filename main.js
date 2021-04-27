@@ -4,9 +4,12 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 let like = document.getElementsByClassName('like-glyph');
+let error = document.getElementById('modal');
 for (let i=0;i< like.length;i++){
   like[0].addEventListener('click', function(e) {
-
+    mimicServerCall()
+    .then(()=>{})
+    .catch(()=>{})
   })
 }
 
