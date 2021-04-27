@@ -15,8 +15,8 @@ like.forEach(item => item.addEventListener('click', function(e) {
       //modalMessage.classList.remove('hidden');
       let timeoutID = window.setTimeout(modalMessage.classList.add('hidden'),3000);
 
-    }))
-  })
+    })
+  }))
 }
 
 
