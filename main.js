@@ -10,7 +10,8 @@ for (let i=0;i< like.length;i++){
     mimicServerCall()
     .then(()=>{})
     .catch(()=>{
-      error.classList.remove('hidden');
+      window.setTimeout(error.classList.remove('hidden'),3000);
+      
     })
   })
 }
