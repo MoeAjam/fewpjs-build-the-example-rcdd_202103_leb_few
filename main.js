@@ -12,6 +12,7 @@ for (let i=0;i< like.length;i++){
     .then(()=>{})
     .catch(()=>{
       error.classList.remove('hidden');
+      modalMessage.insertAdjacentHTML('beforeend',`${error.message}`)
       window.setTimeout(modalMessage.insertAdjacentHTML('beforeend',`${error.message}`),3000);
     })
   })
