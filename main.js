@@ -10,7 +10,9 @@ let modalMessage = document.getElementById('modal-message');
 for (let i=0;i<like.length;i++){
   like[i].addEventListener('click',function(e){
     mimicServerCall()
-    .then(()=>{})
+    .then((response)=>{
+      like.innerHTML = "${FULL_HEART}";
+    })
     .catch(()=>{
       error.classList.remove('hidden');
       modalMessage.insertAdjacentHTML('beforeend',`${error.message}`);
