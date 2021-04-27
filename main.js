@@ -55,6 +55,7 @@ for (let i=0;i<like.length;i++){
       //let timeoutID = window.setTimeout(modalMessage.classList.add('hidden'),3000);
   })
 }
+}
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
 //------------------------------------------------------------------------------
