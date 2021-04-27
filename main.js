@@ -6,8 +6,7 @@ const FULL_HEART = '♥'
 let like = document.getElementsByClassName('like-glyph');
 let error = document.getElementById('modal');
 let modalMessage = document.getElementById('modal-message');
-for (let i=0;i< like.length;i++){
-  like[0].addEventListener('click', function(e) {
+like.forEach(item => item.addEventListener('click', function(e) {
     mimicServerCall()
     .then(()=>{})
     .catch(()=>{
