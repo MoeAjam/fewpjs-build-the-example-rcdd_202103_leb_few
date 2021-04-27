@@ -17,7 +17,6 @@ like.forEach(item => item.addEventListener('click', function(e) {
 
     })
   })
-}
 
 
 //------------------------------------------------------------------------------
