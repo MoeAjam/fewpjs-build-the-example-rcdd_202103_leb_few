@@ -6,7 +6,21 @@ const FULL_HEART = '♥'
 let like = document.getElementsByClassName('like-glyph');
 let error = document.getElementById('modal');
 let modalMessage = document.getElementById('modal-message');
-like.forEach(item => {item.addEventListener('click', function(e) {
+// like.forEach(item => {item.addEventListener('click', function(e) {
+//     mimicServerCall()
+//     .then(()=>{})
+//     .catch(()=>{
+//       error.classList.remove('hidden');
+//       modalMessage.insertAdjacentHTML('beforeend',`${error.message}`);
+//       //modalMessage.classList.remove('hidden');
+//       let timeoutID = window.setTimeout(modalMessage.classList.add('hidden'),3000);
+// 
+//     })
+//   })
+// })
+
+document.getElementsByClassName('like-glyph').forEach(function(item){
+  item.addEventListener('click',function(e) {
     mimicServerCall()
     .then(()=>{})
     .catch(()=>{
@@ -14,8 +28,6 @@ like.forEach(item => {item.addEventListener('click', function(e) {
       modalMessage.insertAdjacentHTML('beforeend',`${error.message}`);
       //modalMessage.classList.remove('hidden');
       let timeoutID = window.setTimeout(modalMessage.classList.add('hidden'),3000);
-
-    })
   })
 })
 
