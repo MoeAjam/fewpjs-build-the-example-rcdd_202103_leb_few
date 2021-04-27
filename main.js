@@ -11,7 +11,7 @@ for (let i=0;i<like.length;i++){
   like[i].addEventListener('click',function(e){
     mimicServerCall()
     .then((response)=>{
-      like.innerHTML = "${FULL_HEART}";
+      like.innerHTML = `${FULL_HEART}`;
     })
     .catch(()=>{
       error.classList.remove('hidden');
