@@ -19,7 +19,7 @@ for (let i=0;i<like.length;i++){
         like.innerHTML = `${FULL_HEART}`;
         like.classList.add("activate-heart");
       }
-      
+
     })
     .catch(()=>{
       error.classList.remove('hidden');
