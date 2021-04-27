@@ -14,7 +14,7 @@ for (let i=0;i< like.length;i++){
       error.classList.remove('hidden');
       modalMessage.insertAdjacentHTML('beforeend',`${error.message}`);
       modalMessage.classList.remove('hidden');
-      let timeoutID = setTimeout(modalMessage.classList.add('hidden'),3000);
+      let timeoutID = this.setTimeout(modalMessage.classList.add('hidden'),3000);
     })
   })
 }
