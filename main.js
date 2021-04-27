@@ -12,7 +12,7 @@ for (let i=0;i< like.length;i++){
     .then(()=>{})
     .catch(()=>{
       error.classList.remove('hidden');
-      window.setTimeout(,3000)
+      window.setTimeout(modalMessage.insertAdjacentHTML('beforeend',`${error.message}`),3000);
     })
   })
 }
