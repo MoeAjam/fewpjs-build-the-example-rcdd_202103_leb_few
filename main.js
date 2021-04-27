@@ -16,8 +16,8 @@ like.forEach(item => {item.addEventListener('click', function(e) {
       let timeoutID = window.setTimeout(modalMessage.classList.add('hidden'),3000);
 
     })
-  }))
-}
+  })
+})
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
