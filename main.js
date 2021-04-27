@@ -34,7 +34,7 @@ let modalMessage = document.getElementById('modal-message');
 document.getElementsByClassName('like-glyph').forEach(function(item){
   item.addEventListener('click',function(e){
     mimicServerCall()
-    .then(()=>{}))
+    .then(()=>{})
     .catch(()=>{
       error.classList.remove('hidden');
       modalMessage.insertAdjacentHTML('beforeend',`${error.message}`);
