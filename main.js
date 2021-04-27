@@ -27,7 +27,7 @@ document.getElementsByClassName('like-glyph').forEach(function(item){
       error.classList.remove('hidden');
       modalMessage.insertAdjacentHTML('beforeend',`${error.message}`);
       //modalMessage.classList.remove('hidden');
-      let timeoutID = window.setTimeout(modalMessage.classList.add('hidden'),3000);
+      //let timeoutID = window.setTimeout(modalMessage.classList.add('hidden'),3000);
   })
 })
 
