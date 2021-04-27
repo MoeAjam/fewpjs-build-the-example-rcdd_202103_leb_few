@@ -14,7 +14,7 @@ let modalMessage = document.getElementById('modal-message');
 //       modalMessage.insertAdjacentHTML('beforeend',`${error.message}`);
 //       //modalMessage.classList.remove('hidden');
 //       let timeoutID = window.setTimeout(modalMessage.classList.add('hidden'),3000);
-// 
+//
 //     })
 //   })
 // })
