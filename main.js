@@ -19,17 +19,17 @@ let modalMessage = document.getElementById('modal-message');
 //   })
 // })
 
-document.getElementsByClassName('like-glyph').forEach(function(item){
-  item.addEventListener('click',function(e) {
-    mimicServerCall()
-    .then(()=>{})
-    .catch(()=>{
-      error.classList.remove('hidden');
-      modalMessage.insertAdjacentHTML('beforeend',`${error.message}`);
-      //modalMessage.classList.remove('hidden');
-      //let timeoutID = window.setTimeout(modalMessage.classList.add('hidden'),3000);
-  })
-})
+// document.getElementsByClassName('like-glyph').forEach(function(item){
+//   item.addEventListener('click',function(e) {
+//     mimicServerCall()
+//     .then(()=>{})
+//     .catch(()=>{
+//       error.classList.remove('hidden');
+//       modalMessage.insertAdjacentHTML('beforeend',`${error.message}`);
+//       //modalMessage.classList.remove('hidden');
+//       //let timeoutID = window.setTimeout(modalMessage.classList.add('hidden'),3000);
+//   })
+// })
 
 document.getElementsByClassName('like-glyph').forEach(function(item){
   item.addEventListener('click',function(e){
