@@ -30,6 +30,7 @@ document.getElementsByClassName('like-glyph').forEach(function(item){
       //let timeoutID = window.setTimeout(modalMessage.classList.add('hidden'),3000);
   })
 })
+}
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
