@@ -12,8 +12,14 @@ for (let i=0;i<like.length;i++){
     mimicServerCall()
     .then((response)=>{
       if(like.innerHTML === `${FULL_HEART}`)
-      like.innerHTML = `${FULL_HEART}`;
-      like.classList.add("activate-heart");
+      {
+        like.innerHTML = `${EMPTY_HEART}`;
+        like.classList.remove("activate-heart");
+      } else {
+        like.innerHTML = `${FULL_HEART}`;
+        like.classList.add("activate-heart");
+      }
+      
     })
     .catch(()=>{
       error.classList.remove('hidden');
