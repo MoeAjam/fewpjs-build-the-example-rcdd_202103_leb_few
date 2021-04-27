@@ -11,7 +11,6 @@ for (let i=0;i< like.length;i++){
     .then(()=>{})
     .catch(()=>{
       window.setTimeout(error.classList.remove('hidden'),3000);
-      
     })
   })
 }
